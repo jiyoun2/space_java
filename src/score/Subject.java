@@ -4,6 +4,8 @@ public class Subject {
 	private String subjectName;
 	private int scorePoint;
 
+	public Subject() {}
+
 	// setter, getter
 	public void setSubjectName(String subjectName) {
 		this.subjectName = subjectName;

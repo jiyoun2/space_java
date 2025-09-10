@@ -1,0 +1,9 @@
+{
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "java": "cd $workspaceRoot && mkdir -p bin && javac -d bin $file && PKG=$(sed -n 's/^package \\(.*\\);/\\1/p' $file) && MAIN=$(basename $file .java) && if [ -n \"$PKG\" ]; then MAIN=\"$PKG.$MAIN\"; fi; java -cp bin $MAIN"
+  },
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.debug.settings.onBuildFailureProceed": true
+}

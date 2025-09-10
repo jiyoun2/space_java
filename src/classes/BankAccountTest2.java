@@ -13,7 +13,7 @@ package classes;
 public class BankAccountTest2 {
 
 	public static void main(String[] args) {
-		// 은행 계좌를 개설할 배열 생성  
+		// 은행 계좌를 개설할 배열 생성
 		BankAccount[] accounts = new BankAccount[3];
 		// 은행 계좌 인스턴스 생성 
 		BankAccount account1 =  new BankAccount();
@@ -33,7 +33,7 @@ public class BankAccountTest2 {
 		accounts[1] = account2;
 		
 		// 계좌 정보 출력
-		for(int i = 0; i < account.length; i++) {
+		for(int i = 0; i < accounts.length; i++) {
 			System.out.println("계좌번호: " + accounts[i].getAno());
 			System.out.println("예금주: " + accounts[i].getOwner());
 			System.out.println("잔액: " + accounts[i].getBalance());
